@@ -1,0 +1,868 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* .umd-wrapper {
+    border-top: 1px solid #000;
+    padding-top: 20px;
+} */
+
+.dropdown:hover li.dropdown {
+    opacity:1;
+}
+li.dropdown{
+    display:block;
+    transition: all 2s ease 0s;  
+}
+
+/* Mockup 3 */
+.wrapper{
+    background-color: #EEF !important;
+}
+
+/* Override font in unify shop.style.css */
+* {
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*Headings*/
+h1, h1 > a{
+  font-size: 28px;
+  line-height: 35px;
+}
+h2, h2 > a {
+  font-size: 24px;
+  line-height: 33px;
+}
+h3, h3 > a {
+  font-size: 20px;
+  line-height: 27px;
+}
+h4, h4 > a {
+  line-height: 25px;
+}
+h5, h5 > a {
+  line-height: 20px;
+}
+h6, h6 > a {
+  line-height: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;    
+  margin-top: 5px;
+  text-shadow: none; 
+  font-weight: normal; 
+  font-family: "Open Sans", Arial, sans-serif;
+} 
+.headline {
+    margin: 10px 0 15px;
+}
+.font-sm {
+    font-size: 13px;
+}
+.font-lg {
+	font-size: 16px;
+}
+.um-red {
+	color:#a40404;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.float-left {
+    float: left;
+    padding: 5px 10px 8px 0;
+}
+.float-right {
+    float: right;
+    padding: 5px 0 8px 10px;
+}
+.img-caption {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px;
+}
+.tab {
+    padding-left: 20px;
+}
+.border-bottom {
+	border-bottom: 1px solid #f7f7f7;
+}
+li a {
+    color: #069;
+}
+a {
+    /* These are technically the same, but use both for Firefox & IE support */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.font-blue {
+    color: #069;
+}
+.menu-description {
+    padding: 0 13px;
+}
+
+/* Info bar
+-------------------------------------*/
+.info-bar {
+    background:#555;
+    color:#fff;
+    padding: 5px 0;
+    margin: 8px 0;
+}
+/* Remove extra br from info bar text */
+.todays-hours > br{
+    display: none;
+}
+.btn-group.lib-btn-group {
+    position: static;
+}
+/* make google search box in info-bar smaller */
+#googlesearch.form-control {
+    height: 23px;
+    padding: 0 5px;
+}
+
+/* Cross-site Header Alert
+------------------------------------- */
+.header-alert {
+    margin-top: 15px;
+    color: white!important;
+    background:         repeating-linear-gradient(45deg,#F00,#F00 10px,#F44 10px,#F44 20px);
+    background:      -o-repeating-linear-gradient(45deg,#F00,#F00 10px,#F44 10px,#F44 20px);
+    background:    -moz-repeating-linear-gradient(45deg,#F00,#F00 10px,#F44 10px,#F44 20px);
+    background: -webkit-repeating-linear-gradient(45deg,#F00,#F00 10px,#F44 10px,#F44 20px);
+    border: none;
+}
+.header-alert * {
+    color: white!important;
+}
+.header-alert p {
+    display: inline;
+}
+.header-alert a {
+    text-decoration: underline;
+}
+/* remove br in info bar 
+-------------------------------------*/
+.info-bar > div >br {
+    display:none;
+}
+
+/* Site menu arrow bug: LIBWEB-2669 
+------------------------------------- */
+.list-toggle:after {
+    pointer-events: none;
+}
+
+/* Mega Menu
+------------------------------------- */
+.mega-menu > .container {
+    padding-right: 30px;
+    padding-left: 0;
+}
+.header-v1 .dropdown-menu li a {
+    color: #006699 !important;
+    font-size: 14px;
+}
+.header-v1 .dropdown-menu li a:hover {
+    color: #fff !important;
+}
+.dropdown-menu {
+    min-width: 300px;
+}
+.menu-des > li {
+    color: #888;
+}
+.header-v1 .mega-menu .dropdown.mega-menu-3col .dropdown-menu {
+    left: 15%;
+    overflow: hidden;
+    right: 1%;
+}
+.header-v1 .mega-menu .dropdown.mega-menu-3col .dropdown-menu .container {
+    max-width:100%;
+}
+.header-v1 .mega-menu .dropdown.mega-menu-2col .dropdown-menu {
+    left: 33%;
+    right: 3%;
+    overflow: hidden;
+}
+.header-v1 .mega-menu .dropdown.mega-menu-2col .dropdown-menu .container {
+    max-width: 100%;
+}
+/* Search Box
+------------------------------------- */
+.lib-search-block {
+    /* Backup bg image */
+    min-height: 280px;
+    position: relative;
+    margin: 0 15px;
+    padding: 30px;
+}
+.lib-search-block-subsite {
+    margin: 0 15px 15px;
+    position: relative;
+}
+.lib-search-block-subsite .lib-searchbox {
+    margin: 0px -15px;
+}
+.lib-searchbox {
+    padding: 10px;
+    text-align: left;
+    opacity: .97;
+    border: 1px solid #eee;
+    background: #fafafa none repeat scroll 0 0;
+}
+.lib-search-text-hidden-xs {
+    display: block;
+    padding: 10px 0;
+}
+.lib-search-text-visible-xs {
+    display: none;
+}
+.db-form.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.db-search-desc-text {
+    margin: 5px 0 -5px;
+}
+.db-az {
+    word-spacing: .35em;
+    margin: 0 0 5px;
+}
+.lib-searchbox-subsite-text {
+    margin: -5px 0;
+}
+/* Available Now  
+------------------------------------*/
+.availability {
+	background: #f7f7f7;
+	padding: 5px;
+}
+.availability table {
+	margin:2px 40px 5px 30px;
+}
+.availability td {
+    border-top: 0 !important;
+    padding: 5px !important;
+    border-bottom: 1px solid #eee;
+}
+.availability h5 {
+    margin: 2px;
+}
+.available-time {
+	font-style: italic;
+	color: #777;
+	font-size: 13px;
+}
+/* links in footer */
+.link-list a {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: none;
+}
+/* Hide UBorrow and Classic Catalog initally
+------------------------------------- */
+.box-worldCat,
+.uborrow,
+.classic {
+    display: none;
+}
+.give-now {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.subsite-left {
+    overflow: hidden;
+    padding-right: 20px;
+}
+.subsite-right {
+	overflow: hidden;
+    padding-left: 20px;
+}
+/* Banner Image for Sub Site
+------------------------------------- */
+.lib-banner-sub {
+    padding: 60px 20px 5px;
+    text-align: left;
+    min-height: 150px;
+    margin-bottom: 8px;
+    display:none;
+}
+.lib-banner-sub h1 {
+    font-size: 30px;
+}
+.lib-banner-sub:after {
+  background: none;
+}
+.subsite-right img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.subsite-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.subsite-right iframe {
+    height: auto;
+    margin: auto;
+    width: 100%;
+}
+
+/* Subsite Footer
+------------------------------------- */
+.subsite-footer {
+    font-style: italic;
+    margin: 10px 0;
+    padding-top: 15px;
+    clear: both;
+}
+.subsite-footer hr {
+    margin: 10px 0;
+}
+
+.mCustomScrollbar {
+    height: 220px;
+}
+.breadcrumbs {
+    padding: 0;
+}
+.breadcrumbs.breadcrumbs-dark,
+.breadcrumbs.breadcrumbs-light {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/* Hours 
+------------------------------------ */
+.lib-hours {
+    min-height: 300px;
+}
+.hoursdisplay {
+	margin-top: 10px;
+}
+.hours {
+    left: -.5em;
+    list-style: outside none none;
+    margin: 0;
+    padding: 3px 0;
+    width: 97%;
+}
+.hours-selected {
+    margin-bottom: 15px;
+    text-align:center;
+    font-size: 16px;
+}
+.sky-form {
+    border: none;
+}
+.sky-form a {
+    color: #069;
+}
+.hours-list {
+    margin-left: 0;
+    margin-right:0;
+}
+.hours-branch {
+    display: block;
+}
+.list-group {
+    padding: 0;
+}
+.lib-submenu-home {
+    color: #000;
+    font-size: 14px;
+    text-align:center;
+}
+.lib-submenu-heading {
+    font-size: 14px;
+    white-space: normal;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+.lib-submenu-home a {
+    color: #000;
+}
+.lib-submenu-btn .btn.focus,
+.lib-submenu-btn .btn:hover,
+.lib-submenu-btn .btn:active {
+    color:#eee;
+}
+.sidebar-nav-v1 > li.active,
+.sidebar-nav-v1 > li.active:hover {
+    background: #999 none repeat scroll 0 0;
+}
+/* LIBWEB-3028 */
+#ui-datepicker-div {
+    z-index: 1002 !important;
+}
+
+/* Staff Directory
+------------------------------------- */
+#a2z {
+    list-style: outside none none;
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+    word-spacing: 0.35em;
+}
+#a2z > li {
+    display: inline-block;
+    text-indent: -0.2em;
+}
+#a2z > li:first-of-type {
+    text-indent: 0;
+}
+#a2z > li::after {
+    margin: 0;
+    padding-left: 0.1em;
+}
+
+/* Search Pagination
+------------------------------------- */
+.search-pagination-ellipsis,
+.search-pagination-ellipsis:hover,
+.search-pagination-ellipsis:active,
+.search-pagination-ellipsis:focus {
+    cursor: default!important;
+    background-color: #eee!important;
+    border-color: #bbb!important;
+    color: #777!important;
+    padding: 5px!important;
+}
+.sort-list-btn h3 {
+    color: #000;
+    margin-right: 5px;
+    font-size: 13px;
+}
+.sort-list-btn .btn-default {
+    border-color: #bbb;
+    color: #000;
+}
+.sort-list-btn .btn-default:hover, .sort-list-btn .btn-default:focus, .sort-list-btn .btn-default:active, .sort-list-btn .btn-default.active, .sort-list-btn .open > .dropdown-toggle.btn-default {
+    border-color: #bbb;
+    color: #000;
+}
+.sort-list-btn .dropdown-menu li a {
+    color: #000;
+}
+.pagination li a {
+    color: #000;
+    padding: 5px 12px;
+}
+.pagination > li > a, .pagination > li > span {
+    border: 1px solid #bbb;
+}
+
+/* Search Filters
+------------------------------------- */
+.facetsearch {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+.facetsearch-field {
+    width: 90%;
+}
+.filter-by-block .panel-body {
+    padding: 10px;
+}
+.filter-by-block .panel-group h2 a {
+    font-size: 16px;
+    padding: 10px;
+}
+.filter-by-block .panel-group h2 i {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.checkbox-list .checkbox small a {
+    color: #000;
+}
+.checkbox-list .checkbox input + i::after {
+    color: #a40404;
+}
+.checkbox-list .checkbox {
+    font-size: 13px;
+    color: #000;
+}
+.checkbox-list .checkbox i {
+    border-color: #555;
+}
+.checkbox-list .checkbox:hover i {
+    border-color: #000;
+}
+.checkbox-list .checkbox input:checked + i {
+    border-color: #a40404;
+}
+.subsite-left label {
+    font-weight: normal;
+}
+.search-record {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px 0 10px 0;
+}
+
+/* Multi-lang navigation buttons
+------------------------------------- */
+.lang-nav {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .lang-nav {
+        margin-top: 2px;
+    }
+    .search-results > .search-record > .row {
+        margin-bottom: 10px;
+    }
+}
+
+.current-language,
+.current-language:active,
+.current-language:hover,
+.current-language:focus {
+    background-color: #a40404;
+    border-color: #a40404;
+    color: #fff;
+    cursor: pointer;
+    z-index: inherit!important;
+}
+
+.other-language:active,
+.other-language:hover,
+.other-language:focus {
+    background: #b61332;
+    border-color: #b61332;
+    color: #fff;
+}
+
+/* Carousel slider 
+------------------------------------------*/
+/* overwrite style defined in app.css */
+.carousel-indicators {
+    bottom: 35px;
+}
+.carousel-indicators > li {
+    border-radius: 10px !important;
+    margin: 0 5px;
+}   
+.carousel-v1 .carousel-caption {
+    bottom: 0;
+}
+/* Re-position and change style for carousel on hours page */
+.lib-hours > .carousel-arrow > a.carousel-control {
+    position:absolute;
+    font-size: 16px;
+}
+.lib-hours > .carousel-arrow > .carousel-control {
+    bottom: inherit;
+    top: 30px;
+}
+.lib-hours > .carousel-arrow > a i {
+    background: none;
+    color: #006699;
+    font-size: 18px;
+    margin-top: -18px;
+    opacity: 1;
+    padding: 2px 12px;
+    position: absolute;
+    top: 50%;
+}
+.lib-hours > .carousel-arrow > a.left i {
+    left: 15px;
+    top: 2px;
+}
+.lib-hours > .carousel-arrow > a.right i {
+    right: 30px;
+    top: 2px;
+}
+.form-control {
+    color: #000;
+    font-size: 14px;
+    height: 30px;
+    border: 1px solid #aaa;
+}
+.filter-by-block {
+    padding: 0;
+}
+/* LIBWEB-3029 */
+@media (max-width: 991px) {
+    .carousel-indicators {
+        bottom: 25px;
+    }
+    .carousel-v1 .carousel-caption {
+        bottom: 0;
+        margin-bottom: -36px;
+    }
+    .carousel-v1 .carousel-caption p {
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .carousel-inner {
+        padding-bottom: 36px;
+    }
+}
+
+/* Solr Result Detail Page
+------------------------------------- */
+/*  http://getbootstrap.com/css/#tables-responsive
+FireFox Table Problem */
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+.sort-list-btn .btn .caret {
+    margin-left: 5px;
+}
+.dropdown-menu {
+    min-width: 100px;
+}
+.solr-search-options {
+    margin: 12px 0 0;
+}
+@media (max-width: 1199px) {
+    .header-v1 .mega-menu .dropdown.mega-menu-2col .dropdown-menu {
+        left: 20%;
+    }
+}
+@media (max-width: 991px) {
+    .solr-search-options {
+        margin: -20px 0 0;
+    }
+    .sort-list-btn {
+        float: left;
+    }
+    .info-bar {
+        margin: 0 0 8px 0;
+    }
+    .header-v1 .dropdown-menu li a:hover {
+        color: #006699 !important;
+        text-decoration: underline !important;
+    }
+}
+
+/* News headlines
+------------------------------------- */
+.profile .comment {
+    padding: 10px;
+    min-height: 75px;
+}
+.profile .comment img {
+    height: 55px;
+    width: 55px;
+}
+.profile .panel-heading {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+}
+.profile .panel-title {
+    font-size: 20px;
+}
+.news-events {
+    margin: 20px 10px 0;
+}
+.editable {
+    position: relative;
+    display: inline;
+}
+
+/* remove hr for rss feed */
+.rss-main > hr {
+    display: none;
+} 
+
+/* Google Custom Search Page
+------------------------------------- */
+.site-custom-search-right {
+    border-left: 2px solid #333;
+}
+
+/* MD Map (and DB Finder) Browse Page
+------------------------------------- */
+.browse-panel-group .panel-body {
+    font-size: 16px;
+}
+.browse-panel-group .panel-title a {
+    display: block;
+    font-size: 18px;
+    margin: -10px -15px;
+    padding: 10px 15px;
+}
+.browse-panel-group .panel-title a:hover,
+.browse-panel-group .panel-title a:active,
+.browse-panel-group .panel-title a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.browse-panel-group .panel-dark {
+    border-color: #dedede;
+}
+.browse-panel-group .panel-dark > .panel-heading {
+    background-color: #333;
+    color: #fff;
+}
+.browse-panel-group .panel-dark > .panel-heading:hover,
+.browse-panel-group .panel-dark > .panel-heading:active,
+.browse-panel-group .panel-dark > .panel-heading:focus  {
+    background-color: #222;
+}
+/* column-width compatibility: http://caniuse.com/#search=column-width */
+.browse-multi-col {
+    /* 191 = 11.5em  CSS3 Multiple column layout
+    = 4 cols in lg = 3 in md = 2 in sm = 1/2 in xs */
+    column-width: 191px;
+    -moz-column-width: 191px;
+    -webkit-column-width: 191px;
+}
+.browse-multi-col ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.browse-multi-col ul li:first-child {
+    margin-top: 0px;
+}
+
+/* Subsite Slideshow (MSPAL for now)
+------------------------------------- */
+#subsiteCarousel {
+    margin: 20px 0;
+}
+#subsiteCarousel .carousel-inner img {
+    width: 100%;
+}
+
+/* Bookplate
+------------------------------------- */
+.subsite-bookplate-img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* IRROC and OER header hr
+------------------------------------- */
+.umd-logo-header-hr {
+    margin: 25px 0 5px;
+    padding: 5px 0 0;
+}
+
+/* Responsive Stylesheets
+------------------------------------- */
+@media (max-width: 767px) {
+    .mega-menu > .container {
+        padding-right: 0;
+    }
+    .lib-submenu {
+        min-height: 50px;
+        margin: 0 5px 0 5px;
+    }
+    /* 5px margin on top for sm and xs */
+    .lib-margin-top {
+        margin-top:5px;
+    }
+    .db-az {
+        margin-bottom: .5em;
+        word-spacing: .7em;
+    }
+    .lib-search-block-subsite {
+        margin: 15px;
+        position: relative;
+    }
+    .lib-search-block-subsite .lib-searchbox {
+        margin: 5px -15px;
+    }
+    .lib-submenu-btn {
+        margin: 0;
+    }
+}
+
+@media (max-width: 479px) {
+    /* 5px margin on top for sm and xs */
+    .lib-margin-top {
+        margin-top:5px;
+    }
+    .db-az{
+        word-spacing: 0.7em;
+        margin-bottom: 0.5em;
+    }
+    .breadcrumbs.breadcrumbs-light h1 {
+        font-size: 20px;
+        margin: 3px 0;
+        color: #000;
+    }
+    .lib-search-block {
+        min-height: 180px;
+        padding: 0;
+        background: #fff;
+    }
+    .lib-search-text-hidden-xs {
+        display: none;
+    }
+    .lib-search-text-visible-xs {
+        display: block;
+        padding: 5px 0;
+        margin-bottom: -25px;
+    }
+    .form-control {
+	    font-size: 13px;
+}
+    .availability table {
+		margin:0;
+	}
+    .available-time {
+		display: block;
+		padding-left: 28px;	
+    }
+    .give-now {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 20px;
+    }
+    .record-title {
+    	font-weight: bold;
+	}
+    /* News headlines
+------------------------------------- */
+	.profile .comment {
+    	padding: 10px 0;
+	}
+	.profile .comment img {
+    	height: 25px;
+    	width: 25px;
+	}
+	.profile .panel-title {
+    	font-size: 18px;
+	}
+}
+
+.db-category-list{
+	 list-style-type: none;
+}
